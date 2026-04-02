@@ -1,6 +1,6 @@
 {
-  "name": "react-idle-cursor-hide",
-  "version": "1.0.1",
+  "name": "@michal.cupak/react-idle-cursor-hide",
+  "version": "1.0.2",
   "description": "Hide the mouse cursor in React after a period of inactivity.",
   "keywords": [
     "react",
