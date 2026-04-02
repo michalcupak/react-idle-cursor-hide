@@ -10,10 +10,10 @@
     "mouse",
     "hook"
   ],
-  "homepage": "https://example.com/react-idle-cursor-hide",
+  "homepage": "https://github.com/michalcupak/react-idle-cursor-hide",
   "repository": {
     "type": "git",
-    "url": "git+https://example.com/react-idle-cursor-hide.git"
+    "url": "git+https://github.com/michalcupak/react-idle-cursor-hide.git"
   },
   "license": "MIT",
   "author": "Michal Cupak",
