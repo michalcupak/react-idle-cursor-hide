@@ -12,7 +12,7 @@ Useful for kiosk apps, signage players, fullscreen dashboards, media viewers, an
 ## Installation
 
 ```bash
-npm install react-idle-cursor-hide
+npm i @michal.cupak/react-idle-cursor-hide
 ```
 
 ## Required CSS
@@ -20,7 +20,7 @@ npm install react-idle-cursor-hide
 Import the packaged CSS once in your app:
 
 ```tsx
-import "react-idle-cursor-hide/styles.css";
+import "@michal.cupak/react-idle-cursor-hide/styles.css";
 ```
 
 ## Quick start
@@ -28,8 +28,8 @@ import "react-idle-cursor-hide/styles.css";
 ### Apply to the entire page
 
 ```tsx
-import { useIdleCursorHide } from "react-idle-cursor-hide";
-import "react-idle-cursor-hide/styles.css";
+import { useIdleCursorHide } from "@michal.cupak/react-idle-cursor-hide";
+import "@michal.cupak/react-idle-cursor-hide/styles.css";
 
 export default function App() {
   useIdleCursorHide({
@@ -44,8 +44,8 @@ export default function App() {
 ### Apply only inside a container
 
 ```tsx
-import { IdleCursorBoundary } from "react-idle-cursor-hide";
-import "react-idle-cursor-hide/styles.css";
+import { IdleCursorBoundary } from "@michal.cupak/react-idle-cursor-hide";
+import "@michal.cupak/react-idle-cursor-hide/styles.css";
 
 export default function App() {
   return (
@@ -85,8 +85,8 @@ By default, the component wraps children in a `div` and hides the cursor on that
 
 ```tsx
 import { useRef } from "react";
-import { useIdleCursorHide } from "react-idle-cursor-hide";
-import "react-idle-cursor-hide/styles.css";
+import { useIdleCursorHide } from "@michal.cupak/react-idle-cursor-hide";
+import "@michal.cupak/react-idle-cursor-hide/styles.css";
 
 export default function Player() {
   const ref = useRef<HTMLDivElement>(null);
