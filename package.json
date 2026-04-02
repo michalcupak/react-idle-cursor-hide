@@ -1,0 +1,56 @@
+{
+  "name": "react-idle-cursor-hide",
+  "version": "1.0.1",
+  "description": "Hide the mouse cursor in React after a period of inactivity.",
+  "keywords": [
+    "react",
+    "cursor",
+    "idle",
+    "kiosk",
+    "mouse",
+    "hook"
+  ],
+  "homepage": "https://example.com/react-idle-cursor-hide",
+  "repository": {
+    "type": "git",
+    "url": "git+https://example.com/react-idle-cursor-hide.git"
+  },
+  "license": "MIT",
+  "author": "Michal Cupak",
+  "type": "module",
+  "sideEffects": [
+    "*.css"
+  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./styles.css": "./dist/styles.css"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup && cp src/styles.css dist/styles.css",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "tsup": "^8.3.5",
+    "typescript": "^5.6.3"
+  }
+}
